@@ -4,11 +4,6 @@ Ready-to-import **custom item templates** for [Bitwarden](https://bitwarden.com)
 covering item types Bitwarden has no built-in type for (software licenses, API
 credentials, …). They are plain Bitwarden JSON — no tooling required.
 
-These pair well with
-[1password-linux-to-bitwarden](https://github.com/MatejLach/1password-linux-to-bitwarden),
-which maps such 1Password items to secure notes with custom fields; these
-templates give you a blank starting point for new ones.
-
 ## Import
 
 1. Web vault → **Tools → Import data**.
