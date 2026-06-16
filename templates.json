@@ -5,12 +5,252 @@
   ],
   "items": [
     {
+      "id": "template-api-credential",
+      "organizationId": null,
+      "folderId": "templates",
+      "type": 2,
+      "name": "API Credential (Template)",
+      "notes": "Template — clone this item and fill it in.",
+      "favorite": false,
+      "fields": [
+        { "name": "api key", "value": "", "type": 1 },
+        { "name": "username / client id", "value": "", "type": 0 },
+        { "name": "client secret", "value": "", "type": 1 },
+        { "name": "base url", "value": "", "type": 0 },
+        { "name": "expires", "value": "", "type": 0 }
+      ],
+      "secureNote": { "type": 0 },
+      "collectionIds": null
+    },
+    {
+      "id": "template-bank-account",
+      "organizationId": null,
+      "folderId": "templates",
+      "type": 2,
+      "name": "Bank Account (Template)",
+      "notes": "Template — clone this item and fill it in.",
+      "favorite": false,
+      "fields": [
+        { "name": "bank name", "value": "", "type": 0 },
+        { "name": "account holder", "value": "", "type": 0 },
+        { "name": "account type", "value": "", "type": 0 },
+        { "name": "routing number", "value": "", "type": 0 },
+        { "name": "account number", "value": "", "type": 0 },
+        { "name": "SWIFT / BIC", "value": "", "type": 0 },
+        { "name": "IBAN", "value": "", "type": 0 },
+        { "name": "PIN", "value": "", "type": 1 }
+      ],
+      "secureNote": { "type": 0 },
+      "collectionIds": null
+    },
+    {
+      "id": "template-crypto-wallet",
+      "organizationId": null,
+      "folderId": "templates",
+      "type": 2,
+      "name": "Crypto Wallet (Template)",
+      "notes": "Template — clone this item and fill it in.",
+      "favorite": false,
+      "fields": [
+        { "name": "wallet name", "value": "", "type": 0 },
+        { "name": "address", "value": "", "type": 0 },
+        { "name": "network", "value": "", "type": 0 },
+        { "name": "recovery phrase", "value": "", "type": 1 },
+        { "name": "private key", "value": "", "type": 1 },
+        { "name": "password", "value": "", "type": 1 }
+      ],
+      "secureNote": { "type": 0 },
+      "collectionIds": null
+    },
+    {
+      "id": "template-database",
+      "organizationId": null,
+      "folderId": "templates",
+      "type": 2,
+      "name": "Database (Template)",
+      "notes": "Template — clone this item and fill it in.",
+      "favorite": false,
+      "fields": [
+        { "name": "type", "value": "", "type": 0 },
+        { "name": "host", "value": "", "type": 0 },
+        { "name": "port", "value": "", "type": 0 },
+        { "name": "database", "value": "", "type": 0 },
+        { "name": "username", "value": "", "type": 0 },
+        { "name": "password", "value": "", "type": 1 },
+        { "name": "connection string", "value": "", "type": 1 }
+      ],
+      "secureNote": { "type": 0 },
+      "collectionIds": null
+    },
+    {
+      "id": "template-driver-license",
+      "organizationId": null,
+      "folderId": "templates",
+      "type": 2,
+      "name": "Driver License (Template)",
+      "notes": "Template — clone this item and fill it in.",
+      "favorite": false,
+      "fields": [
+        { "name": "full name", "value": "", "type": 0 },
+        { "name": "license number", "value": "", "type": 0 },
+        { "name": "class", "value": "", "type": 0 },
+        { "name": "state / country", "value": "", "type": 0 },
+        { "name": "date of birth", "value": "", "type": 0 },
+        { "name": "expiry date", "value": "", "type": 0 }
+      ],
+      "secureNote": { "type": 0 },
+      "collectionIds": null
+    },
+    {
+      "id": "template-email-account",
+      "organizationId": null,
+      "folderId": "templates",
+      "type": 2,
+      "name": "Email Account (Template)",
+      "notes": "Template — clone this item and fill it in.",
+      "favorite": false,
+      "fields": [
+        { "name": "email address", "value": "", "type": 0 },
+        { "name": "username", "value": "", "type": 0 },
+        { "name": "password", "value": "", "type": 1 },
+        { "name": "IMAP server", "value": "", "type": 0 },
+        { "name": "SMTP server", "value": "", "type": 0 },
+        { "name": "port", "value": "", "type": 0 }
+      ],
+      "secureNote": { "type": 0 },
+      "collectionIds": null
+    },
+    {
+      "id": "template-medical-record",
+      "organizationId": null,
+      "folderId": "templates",
+      "type": 2,
+      "name": "Medical Record (Template)",
+      "notes": "Template — clone this item and fill it in.",
+      "favorite": false,
+      "fields": [
+        { "name": "patient name", "value": "", "type": 0 },
+        { "name": "record type", "value": "", "type": 0 },
+        { "name": "provider", "value": "", "type": 0 },
+        { "name": "date", "value": "", "type": 0 },
+        { "name": "reference number", "value": "", "type": 0 }
+      ],
+      "secureNote": { "type": 0 },
+      "collectionIds": null
+    },
+    {
+      "id": "template-membership",
+      "organizationId": null,
+      "folderId": "templates",
+      "type": 2,
+      "name": "Membership (Template)",
+      "notes": "Template — clone this item and fill it in.",
+      "favorite": false,
+      "fields": [
+        { "name": "organization", "value": "", "type": 0 },
+        { "name": "member name", "value": "", "type": 0 },
+        { "name": "member id", "value": "", "type": 0 },
+        { "name": "expiry date", "value": "", "type": 0 },
+        { "name": "phone", "value": "", "type": 0 }
+      ],
+      "secureNote": { "type": 0 },
+      "collectionIds": null
+    },
+    {
+      "id": "template-outdoor-license",
+      "organizationId": null,
+      "folderId": "templates",
+      "type": 2,
+      "name": "Outdoor License (Template)",
+      "notes": "Template — clone this item and fill it in.",
+      "favorite": false,
+      "fields": [
+        { "name": "full name", "value": "", "type": 0 },
+        { "name": "license number", "value": "", "type": 0 },
+        { "name": "valid from", "value": "", "type": 0 },
+        { "name": "expiry date", "value": "", "type": 0 },
+        { "name": "issuing authority", "value": "", "type": 0 }
+      ],
+      "secureNote": { "type": 0 },
+      "collectionIds": null
+    },
+    {
+      "id": "template-passport",
+      "organizationId": null,
+      "folderId": "templates",
+      "type": 2,
+      "name": "Passport (Template)",
+      "notes": "Template — clone this item and fill it in.",
+      "favorite": false,
+      "fields": [
+        { "name": "full name", "value": "", "type": 0 },
+        { "name": "passport number", "value": "", "type": 0 },
+        { "name": "nationality", "value": "", "type": 0 },
+        { "name": "date of birth", "value": "", "type": 0 },
+        { "name": "issue date", "value": "", "type": 0 },
+        { "name": "expiry date", "value": "", "type": 0 },
+        { "name": "issuing authority", "value": "", "type": 0 }
+      ],
+      "secureNote": { "type": 0 },
+      "collectionIds": null
+    },
+    {
+      "id": "template-rewards",
+      "organizationId": null,
+      "folderId": "templates",
+      "type": 2,
+      "name": "Rewards Program (Template)",
+      "notes": "Template — clone this item and fill it in.",
+      "favorite": false,
+      "fields": [
+        { "name": "company", "value": "", "type": 0 },
+        { "name": "member name", "value": "", "type": 0 },
+        { "name": "member id", "value": "", "type": 0 },
+        { "name": "PIN", "value": "", "type": 1 }
+      ],
+      "secureNote": { "type": 0 },
+      "collectionIds": null
+    },
+    {
+      "id": "template-server",
+      "organizationId": null,
+      "folderId": "templates",
+      "type": 2,
+      "name": "Server (Template)",
+      "notes": "Template — clone this item and fill it in.",
+      "favorite": false,
+      "fields": [
+        { "name": "url", "value": "", "type": 0 },
+        { "name": "hostname / IP", "value": "", "type": 0 },
+        { "name": "username", "value": "", "type": 0 },
+        { "name": "password", "value": "", "type": 1 },
+        { "name": "admin console url", "value": "", "type": 0 }
+      ],
+      "secureNote": { "type": 0 },
+      "collectionIds": null
+    },
+    {
+      "id": "template-social-security-number",
+      "organizationId": null,
+      "folderId": "templates",
+      "type": 2,
+      "name": "Social Security Number (Template)",
+      "notes": "Template — clone this item and fill it in.",
+      "favorite": false,
+      "fields": [
+        { "name": "name", "value": "", "type": 0 },
+        { "name": "number", "value": "", "type": 1 }
+      ],
+      "secureNote": { "type": 0 },
+      "collectionIds": null
+    },
+    {
       "id": "template-software-license",
       "organizationId": null,
       "folderId": "templates",
       "type": 2,
       "name": "Software License (Template)",
-      "notes": "Template — duplicate this item and fill it in.",
+      "notes": "Template — clone this item and fill it in.",
       "favorite": false,
       "fields": [
         { "name": "license key", "value": "", "type": 1 },
@@ -24,19 +264,37 @@
       "collectionIds": null
     },
     {
-      "id": "template-api-credential",
+      "id": "template-ssh-key",
       "organizationId": null,
       "folderId": "templates",
       "type": 2,
-      "name": "API Credential (Template)",
-      "notes": "Template — duplicate this item and fill it in.",
+      "name": "SSH Key (Template)",
+      "notes": "Template — clone this item and fill it in.",
       "favorite": false,
       "fields": [
-        { "name": "api key", "value": "", "type": 1 },
-        { "name": "username / client id", "value": "", "type": 0 },
-        { "name": "client secret", "value": "", "type": 1 },
-        { "name": "base url", "value": "", "type": 0 },
-        { "name": "expires", "value": "", "type": 0 }
+        { "name": "key type", "value": "", "type": 0 },
+        { "name": "private key", "value": "", "type": 1 },
+        { "name": "public key", "value": "", "type": 0 },
+        { "name": "fingerprint", "value": "", "type": 0 },
+        { "name": "passphrase", "value": "", "type": 1 }
+      ],
+      "secureNote": { "type": 0 },
+      "collectionIds": null
+    },
+    {
+      "id": "template-wireless-router",
+      "organizationId": null,
+      "folderId": "templates",
+      "type": 2,
+      "name": "Wireless Router (Template)",
+      "notes": "Template — clone this item and fill it in.",
+      "favorite": false,
+      "fields": [
+        { "name": "base station name", "value": "", "type": 0 },
+        { "name": "network name (SSID)", "value": "", "type": 0 },
+        { "name": "wireless password", "value": "", "type": 1 },
+        { "name": "admin password", "value": "", "type": 1 },
+        { "name": "server / IP address", "value": "", "type": 0 }
       ],
       "secureNote": { "type": 0 },
       "collectionIds": null

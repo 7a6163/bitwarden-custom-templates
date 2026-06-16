@@ -1,27 +1,69 @@
 # bitwarden-custom-templates
 
 Ready-to-import **custom item templates** for [Bitwarden](https://bitwarden.com),
-covering item types Bitwarden has no built-in type for (software licenses, API
-credentials, …). They are plain Bitwarden JSON — no tooling required.
+covering item types Bitwarden has no built-in type for (software licenses, SSH
+keys, databases, passports, …). They are plain Bitwarden JSON — no tooling
+required.
 
-## Import
+## Why this exists (interim approach)
 
-1. Web vault → **Tools → Import data**.
-2. File format: **Bitwarden (.json)**.
-3. Choose `templates.json` and import.
+Bitwarden's native item types are only **Login, Card, Identity, and Secure
+Note**. Password managers like 1Password have many more (SSH Key, Database,
+Crypto Wallet, Passport, …), and Bitwarden's importer has nowhere native to put
+them — they end up as plain notes with no structure.
 
-You'll get a **Templates** folder containing blank template items. To create a
-real entry, open a template, **Clone** it, and fill it in.
+This repo is a **stopgap**: each template is a Secure Note with pre-named custom
+fields, so those item types get a consistent, searchable home today. Sensitive
+fields (keys, passwords, PINs, recovery phrases) are marked **hidden**.
 
-> Importing adds items; it never overwrites. Re-importing creates duplicates, so
-> import each file once.
+> If Bitwarden later adds native types or a richer import for these, this becomes
+> unnecessary — you'd re-map the notes to the new native types. Until then, this
+> is the practical workaround.
 
-## What's included
+## How to use
 
-| Item | Fields |
-|------|--------|
-| Software License (Template) | license key (hidden), licensed to, registered email, version, purchase date, order number |
-| API Credential (Template) | api key (hidden), username / client id, client secret (hidden), base url, expires |
+**1. Import the templates (creates the "Templates" folder).**
+
+1. Open the Bitwarden web vault → **Tools → Import data**.
+2. Import destination: **My vault**.
+3. File format: **Bitwarden (.json)**.
+4. Choose `templates.json` → **Import data**.
+
+You now have a **Templates** folder containing one blank item per type.
+
+**2. Create a real entry by cloning a template.**
+
+1. Open the template you want (e.g. *Software License (Template)*).
+2. **⋮ (or Edit) → Clone**.
+3. Fill in the fields, rename it, and move it to whichever folder you like.
+
+Cloning leaves the original template untouched, so it's ready for next time.
+
+> Importing **adds** items — it never overwrites. Re-importing creates
+> duplicates, so import `templates.json` once.
+
+## Included templates
+
+| Template | Notable fields |
+|----------|----------------|
+| API Credential | api key 🔒, client secret 🔒, base url, expires |
+| Bank Account | routing/account number, SWIFT/BIC, IBAN, PIN 🔒 |
+| Crypto Wallet | address, network, recovery phrase 🔒, private key 🔒 |
+| Database | type, host, port, username, password 🔒, connection string 🔒 |
+| Driver License | license number, class, state/country, expiry, DOB |
+| Email Account | address, password 🔒, IMAP/SMTP server, port |
+| Medical Record | patient, record type, provider, date, reference number |
+| Membership | organization, member id, expiry, phone |
+| Outdoor License | license number, valid from, expiry, issuing authority |
+| Passport | passport number, nationality, DOB, issue/expiry, authority |
+| Rewards Program | company, member id, PIN 🔒 |
+| Server | url, hostname/IP, username, password 🔒, admin console url |
+| Social Security Number | name, number 🔒 |
+| Software License | license key 🔒, licensed to, registered email, version |
+| SSH Key | key type, private key 🔒, public key, fingerprint, passphrase 🔒 |
+| Wireless Router | SSID, wireless password 🔒, admin password 🔒, server/IP |
+
+🔒 = hidden field.
 
 ## Add your own
 
@@ -29,17 +71,15 @@ Templates are just Bitwarden items. Copy one in `templates.json` and edit:
 
 ```json
 {
-  "id": "template-database",
+  "id": "template-membership-card",
   "folderId": "templates",
   "type": 2,
-  "name": "Database (Template)",
-  "notes": "Template — duplicate this item and fill it in.",
+  "name": "Gym Membership (Template)",
+  "notes": "Template — clone this item and fill it in.",
   "favorite": false,
   "fields": [
-    { "name": "host", "value": "", "type": 0 },
-    { "name": "port", "value": "", "type": 0 },
-    { "name": "username", "value": "", "type": 0 },
-    { "name": "password", "value": "", "type": 1 }
+    { "name": "member id", "value": "", "type": 0 },
+    { "name": "access code", "value": "", "type": 1 }
   ],
   "secureNote": { "type": 0 },
   "collectionIds": null
@@ -47,4 +87,4 @@ Templates are just Bitwarden items. Copy one in `templates.json` and edit:
 ```
 
 Field `type`: `0` = text, `1` = hidden, `2` = boolean. Item `type` `2` is a
-secure note (the right home for arbitrary key/value templates).
+secure note — the right home for arbitrary key/value templates.
