@@ -1,16 +1,15 @@
 # bitwarden-custom-templates
 
 Ready-to-import **custom item templates** for [Bitwarden](https://bitwarden.com),
-covering item types Bitwarden has no built-in type for (software licenses, SSH
-keys, databases, passports, …). They are plain Bitwarden JSON — no tooling
-required.
+covering item types Bitwarden has no built-in type for (software licenses,
+databases, passports, …). They are plain Bitwarden JSON — no tooling required.
 
 ## Why this exists (interim approach)
 
 Bitwarden's native item types are only **Login, Card, Identity, and Secure
-Note**. Password managers like 1Password have many more (SSH Key, Database,
-Crypto Wallet, Passport, …), and Bitwarden's importer has nowhere native to put
-them — they end up as plain notes with no structure.
+Note** (plus SSH Key). Password managers like 1Password have many more
+(Database, Crypto Wallet, Passport, …), and Bitwarden's importer has nowhere
+native to put them — they end up as plain notes with no structure.
 
 This repo is a **stopgap**: each template is a Secure Note with pre-named custom
 fields, so those item types get a consistent, searchable home today. Sensitive
@@ -60,10 +59,15 @@ Cloning leaves the original template untouched, so it's ready for next time.
 | Server | url, hostname/IP, username, password 🔒, admin console url |
 | Social Security Number | name, number 🔒 |
 | Software License | license key 🔒, licensed to, registered email, version |
-| SSH Key | key type, private key 🔒, public key, fingerprint, passphrase 🔒 |
 | Wireless Router | SSID, wireless password 🔒, admin password 🔒, server/IP |
+| SSO Login | website URL + a `single sign-on` field for the provider |
 
 🔒 = hidden field.
+
+> **SSO Login** is a regular **Login** item (Bitwarden type 1), not a note: it
+> has a URL but no password (you sign in via GitHub / Apple / Google / …). The
+> `single sign-on` field records which provider — handy when a site offers
+> several login methods.
 
 ## Add your own
 
