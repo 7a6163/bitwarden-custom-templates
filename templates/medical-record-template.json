@@ -1,0 +1,55 @@
+{
+  "encrypted": false,
+  "folders": [
+    {
+      "id": "299ca917-d39a-4869-ad5f-eeb701ae945f",
+      "name": "Templates"
+    }
+  ],
+  "items": [
+    {
+      "id": "2a12fa5b-4742-4fb9-9dd1-7211a18717b8",
+      "organizationId": null,
+      "folderId": "299ca917-d39a-4869-ad5f-eeb701ae945f",
+      "type": 2,
+      "name": "Medical Record (Template)",
+      "notes": "Template \u2014 clone this item and fill it in.",
+      "favorite": false,
+      "fields": [
+        {
+          "name": "patient name",
+          "value": "",
+          "type": 0
+        },
+        {
+          "name": "record type",
+          "value": "",
+          "type": 0
+        },
+        {
+          "name": "provider",
+          "value": "",
+          "type": 0
+        },
+        {
+          "name": "date",
+          "value": "",
+          "type": 0
+        },
+        {
+          "name": "reference number",
+          "value": "",
+          "type": 0
+        }
+      ],
+      "secureNote": {
+        "type": 0
+      },
+      "collectionIds": null,
+      "passwordHistory": null,
+      "revisionDate": "2024-01-01T00:00:00.000Z",
+      "creationDate": "2024-01-01T00:00:00.000Z",
+      "deletedDate": null
+    }
+  ]
+}

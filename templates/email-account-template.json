@@ -1,0 +1,60 @@
+{
+  "encrypted": false,
+  "folders": [
+    {
+      "id": "299ca917-d39a-4869-ad5f-eeb701ae945f",
+      "name": "Templates"
+    }
+  ],
+  "items": [
+    {
+      "id": "c336fa6c-99d5-4dcd-9f23-2145ea58f282",
+      "organizationId": null,
+      "folderId": "299ca917-d39a-4869-ad5f-eeb701ae945f",
+      "type": 2,
+      "name": "Email Account (Template)",
+      "notes": "Template \u2014 clone this item and fill it in.",
+      "favorite": false,
+      "fields": [
+        {
+          "name": "email address",
+          "value": "",
+          "type": 0
+        },
+        {
+          "name": "username",
+          "value": "",
+          "type": 0
+        },
+        {
+          "name": "password",
+          "value": "",
+          "type": 1
+        },
+        {
+          "name": "IMAP server",
+          "value": "",
+          "type": 0
+        },
+        {
+          "name": "SMTP server",
+          "value": "",
+          "type": 0
+        },
+        {
+          "name": "port",
+          "value": "",
+          "type": 0
+        }
+      ],
+      "secureNote": {
+        "type": 0
+      },
+      "collectionIds": null,
+      "passwordHistory": null,
+      "revisionDate": "2024-01-01T00:00:00.000Z",
+      "creationDate": "2024-01-01T00:00:00.000Z",
+      "deletedDate": null
+    }
+  ]
+}

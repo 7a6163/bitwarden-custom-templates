@@ -1,0 +1,60 @@
+{
+  "encrypted": false,
+  "folders": [
+    {
+      "id": "299ca917-d39a-4869-ad5f-eeb701ae945f",
+      "name": "Templates"
+    }
+  ],
+  "items": [
+    {
+      "id": "2ec86d06-f4ba-4889-8f01-264467e7e0c1",
+      "organizationId": null,
+      "folderId": "299ca917-d39a-4869-ad5f-eeb701ae945f",
+      "type": 2,
+      "name": "Crypto Wallet (Template)",
+      "notes": "Template \u2014 clone this item and fill it in.",
+      "favorite": false,
+      "fields": [
+        {
+          "name": "wallet name",
+          "value": "",
+          "type": 0
+        },
+        {
+          "name": "address",
+          "value": "",
+          "type": 0
+        },
+        {
+          "name": "network",
+          "value": "",
+          "type": 0
+        },
+        {
+          "name": "recovery phrase",
+          "value": "",
+          "type": 1
+        },
+        {
+          "name": "private key",
+          "value": "",
+          "type": 1
+        },
+        {
+          "name": "password",
+          "value": "",
+          "type": 1
+        }
+      ],
+      "secureNote": {
+        "type": 0
+      },
+      "collectionIds": null,
+      "passwordHistory": null,
+      "revisionDate": "2024-01-01T00:00:00.000Z",
+      "creationDate": "2024-01-01T00:00:00.000Z",
+      "deletedDate": null
+    }
+  ]
+}

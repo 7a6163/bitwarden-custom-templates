@@ -1,0 +1,43 @@
+{
+  "encrypted": false,
+  "folders": [
+    {
+      "id": "299ca917-d39a-4869-ad5f-eeb701ae945f",
+      "name": "Templates"
+    }
+  ],
+  "items": [
+    {
+      "id": "36a6ef0f-3968-4703-b09c-078d3d68ee95",
+      "organizationId": null,
+      "folderId": "299ca917-d39a-4869-ad5f-eeb701ae945f",
+      "type": 1,
+      "name": "SSO Login (Template)",
+      "notes": "Template \u2014 clone this for a site you sign in to via an external provider (GitHub, Apple, Google, ...).",
+      "favorite": false,
+      "fields": [
+        {
+          "name": "single sign-on",
+          "value": "",
+          "type": 0
+        }
+      ],
+      "login": {
+        "uris": [
+          {
+            "match": null,
+            "uri": ""
+          }
+        ],
+        "username": "",
+        "password": "",
+        "totp": ""
+      },
+      "collectionIds": null,
+      "passwordHistory": null,
+      "revisionDate": "2024-01-01T00:00:00.000Z",
+      "creationDate": "2024-01-01T00:00:00.000Z",
+      "deletedDate": null
+    }
+  ]
+}

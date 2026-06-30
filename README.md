@@ -26,9 +26,15 @@ fields (keys, passwords, PINs, recovery phrases) are marked **hidden**.
 1. Open the Bitwarden web vault → **Tools → Import data**.
 2. Import destination: **My vault**.
 3. File format: **Bitwarden (.json)**.
-4. Choose `templates.json` → **Import data**.
+4. Choose `templates.json` (all types at once), or a single file from
+   `templates/` (just one type) → **Import data**.
 
 You now have a **Templates** folder containing one blank item per type.
+
+> **First time:** import `templates.json` to get everything.
+> **Later, when a new type is added:** import only that type's file from
+> `templates/` (e.g. `templates/atm-card-pin-template.json`) so you don't
+> re-create duplicates of the types you already have.
 
 **2. Create a real entry by cloning a template.**
 
@@ -46,6 +52,7 @@ Cloning leaves the original template untouched, so it's ready for next time.
 | Template | Notable fields |
 |----------|----------------|
 | API Credential | api key 🔒, client secret 🔒, base url, expires |
+| ATM Card PIN | bank, card number, withdrawal password 🔒 |
 | Bank Account | routing/account number, SWIFT/BIC, IBAN, PIN 🔒 |
 | Crypto Wallet | address, network, recovery phrase 🔒, private key 🔒 |
 | Database | type, host, port, username, password 🔒, connection string 🔒 |
@@ -92,3 +99,6 @@ Templates are just Bitwarden items. Copy one in `templates.json` and edit:
 
 Field `type`: `0` = text, `1` = hidden, `2` = boolean. Item `type` `2` is a
 secure note — the right home for arbitrary key/value templates.
+
+`templates.json` is the source of truth. After editing it, run `python3
+split.py` to regenerate the per-type files in `templates/`.

@@ -1,0 +1,60 @@
+{
+  "encrypted": false,
+  "folders": [
+    {
+      "id": "299ca917-d39a-4869-ad5f-eeb701ae945f",
+      "name": "Templates"
+    }
+  ],
+  "items": [
+    {
+      "id": "d86f6d1c-61e9-4254-b7b8-53bcfdd1da9a",
+      "organizationId": null,
+      "folderId": "299ca917-d39a-4869-ad5f-eeb701ae945f",
+      "type": 2,
+      "name": "Driver License (Template)",
+      "notes": "Template \u2014 clone this item and fill it in.",
+      "favorite": false,
+      "fields": [
+        {
+          "name": "full name",
+          "value": "",
+          "type": 0
+        },
+        {
+          "name": "license number",
+          "value": "",
+          "type": 0
+        },
+        {
+          "name": "class",
+          "value": "",
+          "type": 0
+        },
+        {
+          "name": "state / country",
+          "value": "",
+          "type": 0
+        },
+        {
+          "name": "date of birth",
+          "value": "",
+          "type": 0
+        },
+        {
+          "name": "expiry date",
+          "value": "",
+          "type": 0
+        }
+      ],
+      "secureNote": {
+        "type": 0
+      },
+      "collectionIds": null,
+      "passwordHistory": null,
+      "revisionDate": "2024-01-01T00:00:00.000Z",
+      "creationDate": "2024-01-01T00:00:00.000Z",
+      "deletedDate": null
+    }
+  ]
+}

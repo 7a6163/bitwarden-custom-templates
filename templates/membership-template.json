@@ -1,0 +1,55 @@
+{
+  "encrypted": false,
+  "folders": [
+    {
+      "id": "299ca917-d39a-4869-ad5f-eeb701ae945f",
+      "name": "Templates"
+    }
+  ],
+  "items": [
+    {
+      "id": "71c79079-19fb-4fca-8cd4-6631c82e3c3a",
+      "organizationId": null,
+      "folderId": "299ca917-d39a-4869-ad5f-eeb701ae945f",
+      "type": 2,
+      "name": "Membership (Template)",
+      "notes": "Template \u2014 clone this item and fill it in.",
+      "favorite": false,
+      "fields": [
+        {
+          "name": "organization",
+          "value": "",
+          "type": 0
+        },
+        {
+          "name": "member name",
+          "value": "",
+          "type": 0
+        },
+        {
+          "name": "member id",
+          "value": "",
+          "type": 0
+        },
+        {
+          "name": "expiry date",
+          "value": "",
+          "type": 0
+        },
+        {
+          "name": "phone",
+          "value": "",
+          "type": 0
+        }
+      ],
+      "secureNote": {
+        "type": 0
+      },
+      "collectionIds": null,
+      "passwordHistory": null,
+      "revisionDate": "2024-01-01T00:00:00.000Z",
+      "creationDate": "2024-01-01T00:00:00.000Z",
+      "deletedDate": null
+    }
+  ]
+}
